@@ -1,0 +1,109 @@
+<Window x:Class="NPCMaker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="NPC Maker" Height="800" Width="1200">
+    <Grid>
+        <TabControl>
+            <!-- Manifest Tab -->
+            <TabItem Header="Manifest">
+                <StackPanel Margin="10">
+                    <TextBox x:Name="nameMod" Margin="5" Text="Mod Name" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="authorEntry" Margin="5" Text="Author" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="versionEntry" Margin="5" Text="Version" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="descriptionEntry" Margin="5" Text="Description" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="uniqueIdEntry" Margin="5" Text="Unique ID" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="nexsusIdEntry" Margin="5" Text="Nexus ID" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <Button Content="Export JSON Manifest" Click="ExportJsonManifest" Margin="5"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Content Tab -->
+            <TabItem Header="Content">
+                <StackPanel Margin="10">
+                    <TextBox x:Name="nameNpc" Margin="5" Text="NPC Name" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="positionLocationEntry" Margin="5" Text="Position Location" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="positionXEntry" Margin="5" Text="Position X" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="positionYEntry" Margin="5" Text="Position Y" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="directionEntry" Margin="5" Text="Direction" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="favorMessageEntry" Margin="5" Text="Favor Message" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="likeMessageEntry" Margin="5" Text="Like Message" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="normalMessageEntry" Margin="5" Text="Normal Message" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="dislikeMessageEntry" Margin="5" Text="Dislike Message" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="hateMessageEntry" Margin="5" Text="Hate Message" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="favorIdEntry" Margin="5" Text="Favor ID" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="likeIdEntry" Margin="5" Text="Like ID" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="normalIdEntry" Margin="5" Text="Normal ID" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="dislikeIdEntry" Margin="5" Text="Dislike ID" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="hateIdEntry" Margin="5" Text="Hate ID" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="otherEntry" Margin="5" Text="Other" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="npcAgeVar" Margin="5" Text="NPC Age" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="firstVar" Margin="5" Text="First" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="secondVar" Margin="5" Text="Second" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="thirdVar" Margin="5" Text="Third" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="genderVar" Margin="5" Text="Gender" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="datetingVar" Margin="5" Text="Dateting" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="sessionBirthdayVar" Margin="5" Text="Session Birthday" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="birthdayNumberVar" Margin="5" Text="Birthday Number" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <TextBox x:Name="fv" Margin="5" Text="Format Version" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <Button Content="Export JSON Content" Click="ExportJsonContent" Margin="5"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Textures Tab -->
+            <TabItem Header="Textures">
+                <StackPanel Margin="10">
+                    <TextBox x:Name="portraitEntry" Margin="5" Text="Portrait File Path" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <Button Content="Browse..." Click="BrowseFile" Margin="5"/>
+                    <TextBox x:Name="spriteEntry" Margin="5" Text="Sprite File Path" Foreground="Gray" GotFocus="ClearTextOnFocus" LostFocus="RestorePlaceholder"/>
+                    <Button Content="Browse..." Click="BrowseFile" Margin="5"/>
+                    <Button Content="Export Textures" Click="TextureSet" Margin="5"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Schedule Tab -->
+            <TabItem Header="Schedule">
+                <StackPanel Margin="10">
+                    <Button Content="Add Monday Entry" Click="AddMondayEntry" Margin="5"/>
+                    <StackPanel x:Name="monPanel" Margin="5"/>
+                    <Button Content="Add Tuesday Entry" Click="AddTuesdayEntry" Margin="5"/>
+                    <StackPanel x:Name="tuePanel" Margin="5"/>
+                    <Button Content="Add Wednesday Entry" Click="AddWednesdayEntry" Margin="5"/>
+                    <StackPanel x:Name="wedPanel" Margin="5"/>
+                    <Button Content="Add Thursday Entry" Click="AddThursdayEntry" Margin="5"/>
+                    <StackPanel x:Name="thuPanel" Margin="5"/>
+                    <Button Content="Add Friday Entry" Click="AddFridayEntry" Margin="5"/>
+                    <StackPanel x:Name="friPanel" Margin="5"/>
+                    <Button Content="Add Saturday Entry" Click="AddSaturdayEntry" Margin="5"/>
+                    <StackPanel x:Name="satPanel" Margin="5"/>
+                    <Button Content="Add Sunday Entry" Click="AddSundayEntry" Margin="5"/>
+                    <StackPanel x:Name="sunPanel" Margin="5"/>
+                    <Button Content="Export Schedule JSON" Click="ExportScheduleJson" Margin="5"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Dialogue Tab -->
+            <TabItem Header="Dialogue">
+                <StackPanel Margin="10">
+                    <Button Content="Add Monday Dialogue" Click="AddMondayDialogue" Margin="5"/>
+                    <StackPanel x:Name="monDialoguePanel" Margin="5"/>
+                    <Button Content="Add Tuesday Dialogue" Click="AddTuesdayDialogue" Margin="5"/>
+                    <StackPanel x:Name="tueDialoguePanel" Margin="5"/>
+                    <Button Content="Add Wednesday Dialogue" Click="AddWednesdayDialogue" Margin="5"/>
+                    <StackPanel x:Name="wedDialoguePanel" Margin="5"/>
+                    <Button Content="Add Thursday Dialogue" Click="AddThursdayDialogue" Margin="5"/>
+                    <StackPanel x:Name="thuDialoguePanel" Margin="5"/>
+                    <Button Content="Add Friday Dialogue" Click="AddFridayDialogue" Margin="5"/>
+                    <StackPanel x:Name="friDialoguePanel" Margin="5"/>
+                    <Button Content="Add Saturday Dialogue" Click="AddSaturdayDialogue" Margin="5"/>
+                    <StackPanel x:Name="satDialoguePanel" Margin="5"/>
+                    <Button Content="Add Sunday Dialogue" Click="AddSundayDialogue" Margin="5"/>
+                    <StackPanel x:Name="sunDialoguePanel" Margin="5"/>
+                    <Button Content="Export Dialogue JSON" Click="ExportDialogueJson" Margin="5"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
