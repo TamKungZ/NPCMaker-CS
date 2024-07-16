@@ -1,0 +1,18 @@
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.csproj.AssemblyReference.cache
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker_MarkupCompile.cache
+c:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\MainWindow.baml
+c:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\MainWindow.g.cs
+c:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.g.resources
+c:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.AssemblyInfoInputs.cache
+c:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.AssemblyInfo.cs
+c:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.csproj.CoreCompileInputs.cache
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.csproj.AssemblyReference.cache
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker_MarkupCompile.cache
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.g.resources
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.AssemblyInfoInputs.cache
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.AssemblyInfo.cs
+C:\Users\USRE\Documents\Stardew Mod Dev\NPC Generator\CS\NPCMaker CS\NPCMaker\obj\Debug\net6.0-windows\NPCMaker.csproj.CoreCompileInputs.cache
